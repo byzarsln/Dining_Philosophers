@@ -1,5 +1,5 @@
 NAME = philo
-SRC = argv_checker.c close.c eating.c init.c main.c mutex_utils.c philosophers.c solo_philo.c time_utils.c utils.c
+SRC = init.c main.c utils.c routine.c
 OBJ := $(SRC:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 CC = gcc
