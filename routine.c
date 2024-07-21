@@ -12,7 +12,7 @@ int	philo_start(t_data *data)
 	i = 0;
 	while(i < data->number_of_philo)
 	{
-		pthread_create(&data->philo[i].thread, NULL, &routine, data);
+		pthread_create(&data->philo[i].thread, NULL, &routine, &data->philo[i]);
 		i++;
 	}
 	i = 0;

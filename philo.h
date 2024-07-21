@@ -47,7 +47,7 @@ typedef struct s_data
 int	ft_isdigit(int c);
 int	init_all(t_data *data, int argc, char **argv);
 int	philo_start(t_data *data);
-
+long	ft_atol(const char *str);
 
 
 
