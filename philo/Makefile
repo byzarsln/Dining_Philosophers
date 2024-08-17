@@ -1,5 +1,5 @@
 NAME = philo
-SRC = init.c main.c utils.c routine.c
+SRC = init.c main.c utils.c routine.c actions.c cleanup.c
 OBJ := $(SRC:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 CC = gcc
@@ -8,9 +8,6 @@ all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)
